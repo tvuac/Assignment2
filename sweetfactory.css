@@ -1,0 +1,101 @@
+/**I used the flexbox to create a navigator*/
+.navigationbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #130502;
+}
+
+.navigationbar-container a{
+    font-size: large;
+    font-family: Helvetica;
+    text-decoration: none;
+    color: #FFE4C7;
+}
+
+/** Navigation bar for all webpages*/
+nav > a:link {
+    color: #FFE4C7;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/** Background image for homepage
+Photo credits to Ylanite Koppens
+Source:
+Photo by Ylanite Koppens from Pexels: https://www.pexels.com/photo/stacked-three-macaroons-2014693/
+Used height: 100%; to fit the whole
+*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/** 
+What does...
+center do to the picture
+no-repeat do to the picture
+cover do to the picture
+*/
+.homepagebackground {
+    background-image: url('images/macaron.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepagedescription {
+    color: #130502;
+    margin-left: 900px;
+    margin-top: 100px;
+    font-family: Helvetica; /**Change the font*/
+}
+
+/**Style for the login-container*/
+.login-container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+    font-family: Helvetica; /**Change the font*/
+  }
+
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .button {
+    background-color: #130502;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .button:hover {
+    opacity: 1;
+  }
+/**-----------------------------------------------------------------*/
